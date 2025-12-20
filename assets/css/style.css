@@ -3920,6 +3920,19 @@ section {
   .hero-area .award-wrapper:after {
     display: none;
   }
+  .hero-area .award-wrapper {
+    justify-content: center;
+  }
+  .circle-text .icon {
+    width: 40px;
+    left: 49%;
+    top: 45%;
+  }
+  .hero-area .award-wrapper .circle-text-wrapper{
+    padding-top: 1px !important;
+    padding-bottom: 1px !important;
+  }
+  
 }
 .hero-area .award-wrapper .circle-text-wrapper {
   padding-top: 30px;
@@ -3950,9 +3963,18 @@ section {
   }
 }
 @media (max-width: 575px) {
-  .hero-area .features-wrapper {
-    grid-template-columns: repeat(1, 100%);
+ 
+  .hero-area .feature-box .text {
+    font-size: 14px;
   }
+  .hero-area .feature-box .number {
+    font-size: 45px;
+  }
+  .about-area-2 .section-content .year-since .first-text{
+    margin-bottom: 1rem;
+    line-height: 1;
+  }
+
 }
 .hero-area .section-content {
   margin-top: 10px;
@@ -10180,7 +10202,7 @@ video.video-area {
 }
 @media only screen and (max-width: 767px) {
   .work-area-6-inner {
-    padding-top: 100px;
+    padding-top: 10px;
   }
 }
 .work-area-6 .works-wrapper-box {
