@@ -7613,6 +7613,9 @@ video.video-area {
   opacity: 0.9;
   width: 130px;
 }
+.circular-shape-wrapper .shape-thumb img.light {
+  display: block;
+}
 .circular-shape-wrapper .shape-thumb img.dark {
   display: none;
 }
