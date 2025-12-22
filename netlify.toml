@@ -1,0 +1,15 @@
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "/*"
+  to = "/:splat.html"
+  status = 200
+  force = false
+
+# Pretty URLs (removes .html)
+[build.processing]
+  skip_processing = false
+
+[build.processing.html]
+  pretty_urls = true
