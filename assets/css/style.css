@@ -12577,10 +12577,7 @@ video.video-area {
   }
 }
 
-/* about page css */
-.about-area-details {
-  /* moving gallery style  */
-}
+
 .about-area-details .section-header {
   border-top: 1px solid var(--border);
   padding-top: 37px;
