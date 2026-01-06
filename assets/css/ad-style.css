@@ -4668,6 +4668,36 @@ h6 {
   padding-top: 20px;
   border-top: 1px solid var(--border);
 }
+/* Place title and total count on single row with the count on the right */
+.fun-fact-area .section-title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.fun-fact-area .total-count {
+  text-align: right;
+}
+.fun-fact-area .total-count a{
+  font-family: var(--font_bdogrotesk);
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 30px;
+  text-transform: uppercase;
+  gap: 10px;
+  color: var(--primary);
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+@media only screen and (max-width: 767px) {
+  .fun-fact-area .section-title-wrapper {
+    display: block;
+  }
+  .fun-fact-area .total-count {
+    margin-top: 12px;
+  }
+}
 @media only screen and (max-width: 1199px) {
   .fun-fact-area .fun-fact-area-inner {
     margin-top: 60px;

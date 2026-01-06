@@ -2181,7 +2181,14 @@ section {
 .rr-btn.hover-bg-theme {
   border-width: 0;
 }
-.rr-btn.hover-bg-theme:hover .btn-wrap .text-two, .rr-btn.hover-bg-theme:focus .btn-wrap .text-two {
+.rr-btn.hover-bg-theme:hover .btn-wrap .text-two,
+.rr-btn.hover-bg-theme:focus .btn-wrap .text-two {
+  /* On light mode, make the hovered button text dark for better contrast */
+  color: var(--black);
+}
+/* Keep dark mode behaviour: hovered text remains light on dark theme */
+.dark .rr-btn.hover-bg-theme:hover .btn-wrap .text-two,
+.dark .rr-btn.hover-bg-theme:focus .btn-wrap .text-two {
   color: var(--white);
 }
 .rr-btn.hover-bg-theme::before {
