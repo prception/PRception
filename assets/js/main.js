@@ -466,7 +466,7 @@
   // hover reveal end
 
   // circular-shape-wrapper
-  if (document.querySelectorAll(".circular-shape-wrapper").length > 0) {
+  if (document.querySelectorAll(".circular-shape-wrapper").length > 0 && window.innerWidth > 767) {
     var cs = gsap.timeline({
       ease: "power2.in",
       backgroundColor: "#FCF7F3",

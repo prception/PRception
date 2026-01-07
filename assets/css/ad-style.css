@@ -2529,12 +2529,12 @@ h6 {
 @media only screen and (max-width: 767px) {
   .footer-area-2 .footer-widget-wrapper {
     grid-template-columns: 300px 1fr;
-    gap: 30px 40px;
+    gap: 30px 50px;
   }
 }
 @media (max-width: 575px) {
   .footer-area-2 .footer-widget-wrapper {
-    grid-template-columns: 1fr;
+    grid-template-columns:150px 1fr;
   }
 }
 @media only screen and (max-width: 1199px) {
@@ -7345,6 +7345,56 @@ h6 {
   line-height: 28px;
   color: var(--primary);
   max-width: 417px;
+}
+
+/* Mobile Fix for Testimonial, Client Area and Circular Shape Overlay Issue */
+@media only screen and (max-width: 767px) {
+  .testimonial-area {
+    padding-bottom: 60px;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .testimonial-area .testimonial-wrapper-box {
+    padding-bottom: 0;
+  }
+  
+  .client-area-2 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .mb--1 {
+    margin-bottom: 0;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .circular-shape-wrapper {
+    height: 60vh;
+    min-height: 400px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .circular-shape-wrapper .shape-thumb img {
+    width: 120px !important;
+    opacity: 1 !important;
+    transform: scale(1) rotate(0) !important;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .circular-shape-wrapper {
+    height: 50vh;
+    min-height: 350px;
+  }
+  
+  .circular-shape-wrapper .shape-thumb img {
+    width: 100px !important;
+  }
 }
 
 /*# sourceMappingURL=ad-style.css.map */
