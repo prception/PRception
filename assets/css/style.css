@@ -4748,13 +4748,15 @@ video.video-area {
   width: 215px;
   height: 100px;
   padding: 10px 20px;
-  background-color: var(--primary);
+  background-color:var(--bg);
+  border: 2px solid var(--bg);
   display: inline-flex;
   justify-content: center;
   align-items: center;
   border-radius: 100px;
   transform: translate(-50%, -50%) rotate(0rad);
 }
+
 @media only screen and (max-width: 1919px) {
   .client-area .client-box {
     width: 165px;
@@ -4793,6 +4795,88 @@ video.video-area {
 .dark .client-area .client-box .light {
   display: block;
 }
+
+/* Dark mode styling for client-box */
+.dark .client-area .client-box {
+  background-color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+/* Client text box styles */
+.client-area .client-text-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.client-area .client-text {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  pointer-events: none;
+  text-align: center;
+  line-height: 1;
+}
+
+/* Light theme text (black text) */
+.client-area .client-text.light {
+  color: #ffffff;
+  display: block;
+}
+
+.client-area .client-text.dark {
+  color: #000000;
+  display: none;
+}
+
+/* Dark theme text switching */
+.dark .client-area .client-text.light {
+  display: none;
+}
+
+.dark .client-area .client-text.dark {
+  display: block;
+}
+
+/* For bg-theme boxes, use white text always */
+.client-area .client-box.bg-theme {
+  background-color: var(--theme) !important;
+  border: 2px solid var(--theme) !important;
+}
+
+.client-area .client-box.bg-theme .client-text {
+  color: #ffffff !important;
+  display: block !important;
+}
+
+/* Responsive text sizes */
+@media only screen and (max-width: 1919px) {
+  .client-area .client-text {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 1399px) {
+  .client-area .client-text {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .client-area .client-text {
+    font-size: 8px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .client-area .client-text {
+    font-size: 7px;
+  }
+}
+
 .client-area .line {
   border-bottom: 1px solid var(--primary);
 }
@@ -6693,6 +6777,16 @@ video.video-area {
   font-weight: 400;
   line-height: 28px;
   max-width: 515px;
+}
+
+/* Image replacement for paragraph text: keep same sizing and responsiveness */
+.about-area-2 .section-content .image-text {
+  display: block;
+  width: 100%;
+  max-width: 515px; /* match paragraph max-width */
+  height: auto;
+  object-fit: contain;
+  border-radius: 15px;
 }
 .about-area-2 .section-content .text-wrapper {
   margin-top: 91px;
