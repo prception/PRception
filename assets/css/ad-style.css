@@ -59,7 +59,7 @@
   --border: rgba(17, 17, 17, 0.1);
   --bg: #111111;
   --theme: #018f87;
-  --black: #111111;
+  --black: #0a0a0a;
   --white: #FFFFFF;
   --action: #018f87;
 }
@@ -68,7 +68,7 @@
   --primary: #FFFFFF;
   --secondary: #999999;
   --border: rgba(255, 255, 255, 0.1);
-  --bg: #171717;
+  --bg: #0a0a0a;
 }
 
 /* typography css */

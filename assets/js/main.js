@@ -708,6 +708,128 @@
     }
   });
 
+  // Tablet view (768px - 1199px)
+  mm.add("(min-width: 768px) and (max-width: 1199px)", () => {
+    if (document.querySelectorAll(".hero-area").length > 0) {
+      var ab2 = gsap.timeline({
+        duration: 5,
+        scrollTrigger: {
+          trigger: ".hero-area",
+          scrub: 2,
+          start: "top 100%",
+          end: "bottom 0%",
+        },
+      });
+
+      // Big text animation - larger scale and better positioning for tablet
+      ab2.to(".big-text-wrapper .big-text", {
+        scale: 0.25,
+        duration: 2,
+        y: "50%",
+        transformOrigin: "top center",
+        color: "var(--big-text-color)",
+      });
+
+      // About area pin
+      ab2.to(".about-area", {
+        scrollTrigger: {
+          trigger: ".about-area",
+          start: "top 0",
+          end: "bottom bottom",
+          pin: ".about-area",
+          pinSpacing: false,
+          scrub: 1,
+        },
+      });
+
+      // Big text pin
+      ab2.to(".big-text-wrapper", {
+        scrollTrigger: {
+          trigger: ".about-area",
+          start: "top top",
+          end: "bottom bottom",
+          pin: ".big-text-wrapper",
+          pinSpacing: false,
+          scrub: 1,
+        },
+      });
+
+      // Text + button reveal
+      gsap.to([".about-area .text-wrapper", ".about-area .btn-wrapper"], {
+        y: "40",
+        delay: 2,
+        opacity: 1,
+        scrollTrigger: {
+          trigger: ".about-area",
+          start: "top center",
+          end: "center center",
+          scrub: 1,
+        },
+      });
+    }
+  });
+
+  // Mobile view (<= 767px)
+  mm.add("(max-width: 767px)", () => {
+    if (document.querySelectorAll(".hero-area").length > 0) {
+      var ab2 = gsap.timeline({
+        duration: 5,
+        scrollTrigger: {
+          trigger: ".hero-area",
+          scrub: 2,
+          start: "top 100%",
+          end: "bottom 0%",
+        },
+      });
+
+      // Big text animation - larger scale and better positioning for mobile
+      ab2.to(".big-text-wrapper .big-text", {
+        scale: 0.35,
+        duration: 2,
+        y: "40%",
+        transformOrigin: "top center",
+        color: "var(--big-text-color)",
+      });
+
+      // About area pin
+      ab2.to(".about-area", {
+        scrollTrigger: {
+          trigger: ".about-area",
+          start: "top 0",
+          end: "bottom bottom",
+          pin: ".about-area",
+          pinSpacing: false,
+          scrub: 1,
+        },
+      });
+
+      // Big text pin
+      ab2.to(".big-text-wrapper", {
+        scrollTrigger: {
+          trigger: ".about-area",
+          start: "top top",
+          end: "bottom bottom",
+          pin: ".big-text-wrapper",
+          pinSpacing: false,
+          scrub: 1,
+        },
+      });
+
+      // Text + button reveal
+      gsap.to([".about-area .text-wrapper", ".about-area .btn-wrapper"], {
+        y: "40",
+        delay: 2,
+        opacity: 1,
+        scrollTrigger: {
+          trigger: ".about-area",
+          start: "top center",
+          end: "center center",
+          scrub: 1,
+        },
+      });
+    }
+  });
+
 
   // video end
 

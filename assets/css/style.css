@@ -45,7 +45,7 @@ work page css
   --border: rgba(17, 17, 17, 0.1);
   --bg: #111111;
   --theme: #018f87;
-  --black: #111111;
+  --black: #0a0a0a;
   --black-2: #999999;
   --white: #FFFFFF;
   --white-2: #999999;
@@ -4056,7 +4056,28 @@ section {
 }
 @media only screen and (max-width: 1199px) {
   .hero-area .big-text {
-    display: none;
+    font-size: 320px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .hero-area .big-text {
+    font-size: 220px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .hero-area .big-text {
+    font-size: 140px;
+  }
+}
+@media only screen and (max-width: 479px) {
+  .hero-area .big-text {
+    font-size: 115px;
+  }
+  .about-area-inner{
+    height: 70vh !important;
+  }
+  .about-area .section-content{
+    justify-content: flex-start !important;
   }
 }
 
@@ -4164,16 +4185,30 @@ video.video-area {
     font-size: 20px;
   }
 }
+@media only screen and (max-width: 467px) {
+    .hero-content.section-spacing-bottom {
+        padding-bottom: 10px;
+    }
+    .about-area-2-inner.section-spacing-top {
+        padding-top: 10px;
+    }
+    .hero-area .features-wrapper{
+        gap: 30px 20px;
+    }
+    .fun-fact-area .fun-fact-wrapper {
+    justify-content: center;
+}
+.fun-fact-area .total-count a {
+  font-size: 14px !important;
+}
+.contact-cta-section{
+  padding: 0 !important;
+}
+}
 .about-area .section-content .text-wrapper {
   opacity: 0;
   transform: translateY(100px);
   transition: transform 0.5s, opacity 0.5s;
-}
-@media only screen and (max-width: 1199px) {
-  .about-area .section-content .text-wrapper {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 .about-area .section-content .btn-wrapper {
   margin-top: 62px;
@@ -4181,21 +4216,9 @@ video.video-area {
   transform: translateY(100px);
   transition: transform 0.5s, opacity 0.5s;
 }
-@media only screen and (max-width: 1199px) {
-  .about-area .section-content .btn-wrapper {
-    opacity: 1;
-    margin-top: 50px;
-    transform: translateY(0);
-  }
-}
 .about-area .section-title-wrapper {
-  display: none;
-}
-@media only screen and (max-width: 1199px) {
-  .about-area .section-title-wrapper {
-    display: block;
-    margin-bottom: 20px;
-  }
+  opacity: 0;
+  pointer-events: none;
 }
 
 /* work area style  */
