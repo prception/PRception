@@ -4810,26 +4810,41 @@ h6 {
 }
 .fun-fact-area .fun-fact__item .media {
   position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
 }
 .fun-fact-area .fun-fact__item .media img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 10px;
+  transition: filter 0.4s ease;
+}
+.fun-fact-area .fun-fact__item .media:hover img {
+  filter: blur(8px);
 }
 .fun-fact-area .fun-fact__item .media .text {
-  max-width: 202px;
   position: absolute;
-  top: 40px;
-  left: 40px;
-  z-index: 1;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 30px 40px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.5) 70%, transparent 100%);
+  transform: translateY(100%);
+  transition: transform 0.4s ease;
+  z-index: 2;
+}
+.fun-fact-area .fun-fact__item .media:hover .text {
+  transform: translateY(0);
 }
 .fun-fact-area .fun-fact__item .media .text h6 {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
-  line-height: 22px;
-  letter-spacing: -1px;
-  color: rgba(255, 255, 255, 0.5);
+  line-height: 24px;
+  letter-spacing: -0.5px;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0;
 }
 .fun-fact-area .fun-fact__item .media .text h6 span {
   color: var(--white);

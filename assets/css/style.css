@@ -6723,7 +6723,7 @@ video.video-area {
   }
 }
 .about-area-2 .section-content .year-since {
-  font-size: 200px;
+  font-size: 180px;
   font-weight: 315;
   line-height: 0.71;
   letter-spacing: -0.01em;
@@ -6736,12 +6736,12 @@ video.video-area {
 }
 @media only screen and (max-width: 1919px) {
   .about-area-2 .section-content .year-since {
-    font-size: 150px;
+    font-size: 110px;
   }
 }
 @media only screen and (max-width: 1399px) {
   .about-area-2 .section-content .year-since {
-    font-size: 185px;
+    font-size: 100px;
     text-align: left;
     position: relative;
     white-space: wrap;
@@ -6749,22 +6749,23 @@ video.video-area {
 }
 @media only screen and (max-width: 1199px) {
   .about-area-2 .section-content .year-since {
-    font-size: 180px;
+    font-size: 90px;
   }
 }
 @media only screen and (max-width: 991px) {
   .about-area-2 .section-content .year-since {
-    font-size: 110px;
+    font-size: 80px;
   }
 }
 @media only screen and (max-width: 767px) {
   .about-area-2 .section-content .year-since {
-    font-size: 100px;
+    font-size: 70px;
   }
 }
 @media (max-width: 575px) {
   .about-area-2 .section-content .year-since {
     font-size: 50px;
+    line-height: 1;
   }
   .about-area-2 .section-content .text {
     font-size: 18px  !important;
@@ -8322,6 +8323,12 @@ video.video-area {
 }
 
 /* approach area style  */
+.approach-area {
+  background-color: #111111;
+}
+.dark .approach-area {
+  background-color: #fcf7f3;
+}
 .approach-area .section-header {
   margin-top: 43px;
 }
@@ -8351,7 +8358,7 @@ video.video-area {
     grid-template-columns: 1fr;
   }
 }
-.approach-area .section-subtitle {
+.approach-area .section-subtitle1{
   font-family: var(--font_sequelsansromanbody);
   font-size: 30px;
   font-weight: 310;
@@ -8359,27 +8366,37 @@ video.video-area {
   letter-spacing: -0.07em;
   color: var(--primary);
 }
+.approach-area .section-subtitle1 {
+  color: #ffffff;
+}
+.dark .approach-area .section-subtitle1 {
+  color: #111111;
+}
 @media only screen and (max-width: 1919px) {
-  .approach-area .section-subtitle {
+  .approach-area .section-subtitle1 {
     font-size: 24px;
   }
 }
 @media only screen and (max-width: 991px) {
-  .approach-area .section-subtitle {
+  .approach-area .section-subtitle1 {
     font-size: 18px;
   }
-  .approach-area .section-subtitle br {
+  .approach-area .section-subtitle1 br {
     display: none;
   }
 }
 .approach-area .section-title {
   max-width: 1126px;
+  color: #ffffff;
+}
+.dark .approach-area .section-title {
+  color: #111111;
 }
 .approach-area .section-title span {
-  color: rgba(17, 17, 17, 0.3);
+  color: rgba(255, 255, 255, 0.3);
 }
 .dark .approach-area .section-title span {
-  color: rgba(252, 247, 243, 0.3);
+  color: rgba(17, 17, 17, 0.3);
 }
 .approach-area .approach-wrapper-box {
   margin-top: 94px;
@@ -8417,7 +8434,10 @@ video.video-area {
   font-weight: 310;
   line-height: 0.65;
   letter-spacing: -0.07em;
-  color: var(--primary);
+  color: #ffffff;
+}
+.dark .approach-area .approach-wrapper-box .steps {
+  color: #111111;
 }
 @media only screen and (max-width: 1919px) {
   .approach-area .approach-wrapper-box .steps {
@@ -8443,8 +8463,20 @@ video.video-area {
   padding-bottom: 24px;
   border-bottom: 1px dashed #878482;
 }
+.approach-area .approach-box {
+  border-bottom-color: rgba(255, 255, 255, 0.3);
+}
+.dark .approach-area .approach-box {
+  border-bottom-color: rgba(17, 17, 17, 0.3);
+}
 .approach-area .approach-box:first-child {
   border-top: 1px dashed #878482;
+}
+.approach-area .approach-box:first-child {
+  border-top-color: rgba(255, 255, 255, 0.3);
+}
+.dark .approach-area .approach-box:first-child {
+  border-top-color: rgba(17, 17, 17, 0.3);
 }
 @media only screen and (max-width: 1919px) {
   .approach-area .approach-box {
@@ -8470,7 +8502,10 @@ video.video-area {
   font-size: 18px;
   font-weight: 400;
   line-height: 26px;
-  color: var(--primary);
+  color: #ffffff;
+}
+.dark .approach-area .approach-box .number {
+  color: #111111;
 }
 @media only screen and (max-width: 1399px) {
   .approach-area .approach-box .number {
@@ -8482,6 +8517,10 @@ video.video-area {
   font-weight: 310;
   line-height: 30px;
   letter-spacing: -0.07em;
+  color: #ffffff;
+}
+.dark .approach-area .approach-box .title {
+  color: #111111;
 }
 @media only screen and (max-width: 1919px) {
   .approach-area .approach-box .title {
@@ -8492,6 +8531,10 @@ video.video-area {
   font-size: 18px;
   font-weight: 400;
   line-height: 26px;
+  color: rgba(255, 255, 255, 0.8);
+}
+.dark .approach-area .approach-box .text {
+  color: rgba(17, 17, 17, 0.8);
 }
 
 /* funfact area 2 style  */
