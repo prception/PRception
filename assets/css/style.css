@@ -3859,7 +3859,7 @@ section {
   font-weight: 400;
   line-height: 0.72;
   display: inline-block;
-  color: var(--primary);
+  color: var(--action);
 }
 @media only screen and (max-width: 1919px) {
   .hero-area .feature-box .number {

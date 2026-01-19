@@ -1,0 +1,66 @@
+/* TEAM */
+
+/* LEADERSHIP */
+
+CEO: Girish Padoli
+Creative Director: Visakh R
+Marketing Head: Shahid Masood
+Influencer Marketing Head: Akhil Nath
+
+/* DEVELOPMENT TEAM */
+
+Growth Engineer: Nihal Muhammed
+Web Developer: Alfiya S
+Software Developer: Jeeshma Prakash S
+DevOps Engineer: Aswin KP
+
+/* DESIGN TEAM */
+
+Graphic Designer: Soorya Nandhan S
+
+/* MARKETING TEAM */
+
+Growth Engineer: Farzana N
+SEO Specialist: Fathima Farzana YS
+Social Media Manager: Karthika M
+
+/* SITE */
+
+Last update: 2026/01/19
+Language: English
+Doctype: HTML5
+Standards: HTML5, CSS3, JavaScript
+Components: Bootstrap, Swiper, GSAP, ScrollTrigger, Matter.js
+Fonts: Sequel Sans, Instrument Sans, BD O Grotesk
+
+/* ABOUT */
+
+Company: PRception
+Location: Kerala, India
+Industry: Digital Marketing & Creative Agency
+Established: 2024
+Website: https://prception.in
+
+Philosophy: Facts Inform. Perception Shapes Reality.
+Mission: To bridge the gap between how a brand sees itself and how the world sees it.
+
+/* SERVICES */
+
+Digital Marketing
+Influencer Marketing
+Web Development
+Search Engine Optimization (SEO)
+Performance Marketing
+Branding & Identity Design
+
+/* CONTACT */
+
+Contact Form: /contact.html
+Team Page: /team.html
+
+/* THANKS */
+
+Thanks for visiting our humans.txt file!
+We appreciate you taking the time to learn about the people behind PRception.
+
+Want to join our team? Visit /contact.html

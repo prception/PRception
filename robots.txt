@@ -1,0 +1,14 @@
+# robots.txt for PRception
+# https://www.robotstxt.org/
+
+# Allow all search engines to crawl all content
+User-agent: *
+Allow: /
+
+# Sitemap location (update this URL to your actual sitemap location)
+Sitemap: https://prception.in/sitemap.xml
+
+# Disallow crawling of private/internal files
+Disallow: /.git/
+Disallow: /.vscode/
+Disallow: /.htaccess
