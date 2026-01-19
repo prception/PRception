@@ -4712,6 +4712,7 @@ h6 {
   display: inline-flex;
   align-items: self-start;
   gap: 10px;
+  width: 100%;
 }
 @media only screen and (max-width: 767px) {
   .fun-fact-area .fun-fact-wrapper {
@@ -4721,15 +4722,16 @@ h6 {
 .fun-fact-area .fun-fact__item {
   border-radius: 10px;
   width: 440px;
+  flex-shrink: 0;
 }
 @media only screen and (max-width: 1199px) {
   .fun-fact-area .fun-fact__item {
-    width: 400px;
+    width: 100%;
   }
 }
 @media only screen and (max-width: 991px) {
   .fun-fact-area .fun-fact__item {
-    width: 300px;
+    width: 100%;
   }
 }
 .fun-fact-area .fun-fact__item.has--card {
@@ -4820,6 +4822,13 @@ h6 {
   object-fit: cover;
   border-radius: 10px;
   transition: filter 0.4s ease;
+}
+@media only screen and (max-width: 1199px) {
+  .fun-fact-area .fun-fact__item .media img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+  }
 }
 .fun-fact-area .fun-fact__item .media:hover img {
   filter: blur(8px);

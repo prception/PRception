@@ -25729,6 +25729,7 @@ body:not(.dark) .contact-cta-section {
   .contact-cta-inner {
     flex-direction: column;
     gap: 50px;
+    margin-top: 2rem;
   }
 }
 
