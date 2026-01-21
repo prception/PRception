@@ -7421,4 +7421,14 @@ h6 {
   }
 }
 
+/* Mobile font size reductions */
+@media (max-width: 767px) {
+  .about-area-2 .section-title {
+    font-size: 25px !important;
+  }
+  .about-area-2 .year-since {
+    font-size: 30px !important;
+  }
+}
+
 /*# sourceMappingURL=ad-style.css.map */
