@@ -786,8 +786,8 @@
       ab2.to(".big-text-wrapper .big-text", {
         scale: 0.35,
         duration: 2,
-        y: "40%",
-        transformOrigin: "top center",
+        y: "230%",
+        transformOrigin: "bottom center",
         color: "var(--big-text-color)",
       });
 
