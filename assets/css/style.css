@@ -4581,7 +4581,7 @@ section {
 
 @media only screen and (max-width: 1399px) {
   .hero-area .big-text {
-    font-size: 490px;
+    font-size: 440px;
   }
 }
 
@@ -4605,7 +4605,7 @@ section {
 
 @media only screen and (max-width: 479px) {
   .hero-area .big-text {
-    font-size: 115px;
+    font-size: 123px;
   }
 
   .about-area-inner {
@@ -30511,4 +30511,11 @@ body:not(.dark) .location-address {
 
 .dark .footer-modern .copyright-text .text a:hover {
   color: #ffffff;
+}
+
+/* Mobile height fix for about area */
+@media only screen and (max-width: 767px) {
+  .about-area .section-content {
+    height: 50vh !important;
+  }
 }
